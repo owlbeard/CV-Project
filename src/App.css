@@ -1,0 +1,275 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+
+body {
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100vw;
+}
+
+.header {
+  text-align: left;
+  background-color: #95dab6;
+  color: white;
+  padding-left: 24px;
+}
+
+.content {
+  flex-grow: 1;
+  display: flex;
+  gap: 24px;
+  background: white;
+}
+
+.footer {
+  display: flex;
+  background: #95dab6;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+#footer-logo {
+  height: 50px;
+  width: auto;
+  border-radius: 50%;
+  cursor: pointer;
+  background: #f2e6b1;
+}
+
+.hero {
+  max-width: 500px;
+}
+
+#hero-image {
+  height: 400px;
+  width: 500px;
+  margin-left: 8px;
+  margin-top: 8px;
+  border-radius: 12px;
+}
+
+#hero-text {
+  text-align: center;
+}
+
+.instruct {
+  margin-left: 8px;
+  background-color: #83b2d0;
+  color: white;
+  border-right: 2px;
+  border-radius: 12px;
+  padding: 8px;
+  width: 484px;
+}
+
+.personal,
+.educational,
+.exp {
+  display: flex;
+  flex-direction: column;
+}
+
+.cv-form {
+  display: flex;
+  flex-grow: 1;
+  gap: 12px;
+}
+
+#expForm {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+#form {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.inputs {
+  display: flex;
+  gap: 8px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+#reset {
+  background-color: #dc8580;
+  border: 0;
+  border-radius: 12px;
+  color: white;
+  padding: 8px;
+}
+
+#submit {
+  background-color: #95dab6;
+  border: 0;
+  border-radius: 12px;
+  color: white;
+  padding: 8px;
+}
+
+#addExp {
+  margin-top: 8px;
+  background-color: #95dab6;
+  border: 0;
+  border-radius: 12px;
+  color: white;
+  padding: 8px;
+}
+
+input {
+  appearance: none;
+  border-radius: 12px;
+  border: 0;
+  padding: 5px;
+}
+
+input:focus {
+  outline: none;
+  background: #95dab6;
+}
+
+button:focus {
+  outline: none;
+}
+
+.cv {
+  display: flex;
+  justify-content: space-between;
+  background-color: #f2e6b1;
+  margin: 8px 0;
+}
+
+.cvText {
+  flex-grow: 1;
+  background-color: white;
+  margin-bottom: 24px;
+  margin-top: 24px;
+}
+
+.cvHeader {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  background: #83b2d0;
+  padding-left: 12px;
+  color: white;
+}
+
+.cvInfo {
+  padding: 12px;
+  background: white;
+  margin-bottom: 24px;
+}
+
+.cvContainer {
+  display: flex;
+  flex-grow: 1;
+  margin-right: 8px;
+}
+
+.cvPrintContainer {
+  flex-grow: 1;
+  position: relative;
+}
+
+.workExp {
+  display: flex;
+  flex-wrap: wrap;
+  max-height: 800px;
+  gap: 6px;
+  overflow: hidden;
+}
+
+.workInfo {
+  background: #83b2d0;
+  border-radius: 12px;
+  padding: 4px;
+  color: white;
+  width: 9rem;
+}
+
+.photo {
+  background: #83b2d0;
+  padding: 12px;
+  margin-right: 24px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+#addPhoto {
+  cursor: pointer;
+  background: transparent;
+  border: 0;
+}
+
+#photo {
+  border-radius: 50%;
+}
+
+#eMail,
+#phoneNo {
+  height: 1rem;
+  filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(355deg)
+    brightness(105%) contrast(103%);
+}
+
+.mail,
+.phone {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+#edu,
+#workHeader {
+  background-color: #f2e6b1;
+  color: #83b2d0;
+  border-radius: 12px;
+  padding: 8px;
+}
+
+.form-container {
+  background-color: #7f87b2;
+  padding: 24px;
+  color: white;
+  border-radius: 12px;
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+#print {
+  position: absolute;
+  background-color: #95dab6;
+  border: 0;
+  border-radius: 12px;
+  color: white;
+  padding: 8px;
+  right: 0;
+}
+
+@media print {
+  .cv {
+    width: 21cm !important;
+    height: 29.7cm !important;
+    margin: 0;
+  }
+  .print-preview {
+    width: 21cm;
+    height: 29.7cm;
+    margin: 0;
+    border: 5px solid #000;
+  }
+}
