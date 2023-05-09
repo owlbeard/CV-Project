@@ -28,7 +28,6 @@ const Output = (props) => {
   const handlePrint = useReactToPrint({
     content: () => componentRef.current,
     documentTitle: 'CV',
-    onAfterPrint: () => alert('Print success'),
   });
   let workHeader = null;
   if (props.workExp === true)

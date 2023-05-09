@@ -26,7 +26,7 @@ function Content() {
             <li>
               <h3>
                 {`Click the print button that will appear
-                at the bottom right of the page!`}
+                at the bottom right of the CV!`}
               </h3>
             </li>
           </ul>

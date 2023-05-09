@@ -161,13 +161,33 @@ class Input extends React.Component {
           <form onSubmit={this.addExp} id="expForm">
             <h2>Work Experience</h2>
             <label htmlFor="company">Company</label>
-            <input type="text" name="company" onChange={this.stateSetter} />
+            <input
+              type="text"
+              name="company"
+              required
+              onChange={this.stateSetter}
+            />
             <label htmlFor="position">Position</label>
-            <input type="text" name="position" onChange={this.stateSetter} />
+            <input
+              type="text"
+              name="position"
+              required
+              onChange={this.stateSetter}
+            />
             <label htmlFor="workFrom">From</label>
-            <input type="number" name="workFrom" onChange={this.stateSetter} />
+            <input
+              type="number"
+              name="workFrom"
+              required
+              onChange={this.stateSetter}
+            />
             <label htmlFor="workTo">To</label>
-            <input type="number" name="workTo" onChange={this.stateSetter} />
+            <input
+              type="number"
+              name="workTo"
+              required
+              onChange={this.stateSetter}
+            />
             <button id="addExp" type="submit">
               Add Work Experience
             </button>

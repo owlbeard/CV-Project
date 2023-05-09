@@ -144,6 +144,10 @@ button:focus {
   outline: none;
 }
 
+button:active {
+  transform: translateY(4px);
+}
+
 .cv {
   display: flex;
   justify-content: space-between;
@@ -217,6 +221,7 @@ button:focus {
 
 #photo {
   border-radius: 50%;
+  max-width: 200px;
 }
 
 #eMail,
