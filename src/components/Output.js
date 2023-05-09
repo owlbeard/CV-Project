@@ -12,7 +12,7 @@ const Output = (props) => {
       const selectedFile = e.target.files[0];
       const reader = new FileReader();
 
-      var photo = document.getElementById('photo');
+      const photo = document.getElementById('photo');
       photo.title = selectedFile.name;
 
       reader.onload = (e) => {
